@@ -56,7 +56,7 @@ def function4(M,source,dstlist,limit):
  global H
  G=M
  start=time.time()
- 
+ cost_dstlist=list(dstlist)
  #*print "\n  ______________________ SIMULATION TO DETERMINE MULTICAST PATH _________________________"
  #*print "SOURCE AT FUNCTION $ IS************** ",source
  grpcount=0
@@ -233,7 +233,25 @@ def function4(M,source,dstlist,limit):
  #plt.figure(2)
  #nx.draw_graphviz(H,edge_labels=dict, label_pos=0.5, font_size=10, font_color='k',edge_color='g')
  #plt.show()
- 
- res=[cost,runtime]
+ costlist=[]
+ sumcost=0
+ for i in cost_dstlist:
+    x=nx.dijkstra_path_length(H,source,i)
+    sumcost=sumcost+x
+    costlist.append(x)
+
+ costlist.sort()
+ max=costlist[len(costlist)-1]
+ avg=float (sumcost)/len(costlist)
+ median=0
+ if len(costlist)%2 ==0:
+    median_ptr=len(costlist)/2
+    median=float(costlist[median_ptr]+costlist[median_ptr+1])/2
+
+ else:
+    median_ptr=(len(costlist)+1)/2
+    median=float(costlist[median_ptr])
+
+ res=[cost,runtime,hopcount,max,avg,median]
  return res
 

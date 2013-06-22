@@ -14,7 +14,7 @@ hopcount=0
 
 
 #************************************************************************************************************************
-def unicast(next,dst):
+def unicast(G,next,dst):
  cur=next
  if cur==dst:
     #*print "Reached destination ",cur
@@ -38,7 +38,7 @@ def unicast(next,dst):
            #*print"Now hop count is =",hopcount
            cur=path[i+1]
            #*print"Next hop is ",path[i+1]
-def cost_split(cur,tremdstlist):
+def cost_split(G,cur,tremdstlist):
  
  csplit=0
  tablesplit=[[]  for i in range(len(tremdstlist))]
@@ -65,7 +65,7 @@ def cost_split(cur,tremdstlist):
                  csplit=csplit+curwt
  return csplit
 
-def cost_nsplit(cur,tremdstlist):
+def cost_nsplit(G,cur,tremdstlist):
  #*print "Entering cnsplit"
  cnsplit=[]
  next=[]
@@ -97,7 +97,7 @@ def cost_nsplit(cur,tremdstlist):
 
  if (len(next2)!=0):
   for x in range(0,len(next2)):
-     cost=G.edge[cur][next2[x]]['weight']+cost_split(next2[x],tremdstlist)
+     cost=G.edge[cur][next2[x]]['weight']+cost_split(G,next2[x],tremdstlist)
      cnsplit.append(cost)
   mincost=cnsplit[0]
   pos=0
@@ -153,16 +153,14 @@ def cost_nsplit(cur,tremdstlist):
 
 #************************************************************************************************************************
 #start=time.time()
-def function2(M,source,dstlist):
- global totalwt
- global hopcount
- global G
+def function2(G,source,dstlist):
+ #global totalwt
+ #global hopcount
  global H
- G=M
  totalwt=0
  hopcount=0
  H=nx.Graph()
-
+ 
  #*print "\n  ______________________ SIMULATION TO DETERMINE MULTICAST PATH _________________________"
  #dstlist = raw_input("\n Enter destination list: ")
  #nodes=G.nodes()
@@ -177,6 +175,7 @@ def function2(M,source,dstlist):
  #dstlist = map(int, dstlist.split())
  remdstlist=dstlist
  tremdstlist=remdstlist
+ cost_dstlist=list(dstlist)
  start=time.time()
 
  #*print "There no of destinations is ",len(dstlist)
@@ -257,9 +256,9 @@ def function2(M,source,dstlist):
       
    if flag1==1:
        #*print "Splitting packet ...........?"
-       csplit=cost_split(cur,tremdstlist)
+       csplit=cost_split(G,cur,tremdstlist)
        #*print "csplit cost  :  ",csplit
-       result= cost_nsplit(cur,tremdstlist)
+       result= cost_nsplit(G,cur,tremdstlist)
        cnsplit=result[1]
        #*print "cnsplit cost : ",cnsplit
        if cnsplit<=csplit:
@@ -321,7 +320,7 @@ def function2(M,source,dstlist):
                  wt=G.edge[cur][nexthop2[i]]['weight']
                  H.add_edge(cur,nexthop2[i],weight=wt)
                  #*print "Adding edge from ",cur," to ",nexthop2[i]
-                 unicast(nexthop2[i],table2[i][0])
+                 unicast(G,nexthop2[i],table2[i][0])
                  totalwt=totalwt+wt
                  hopcount=hopcount+1
                  #*print "Now hopcount is ===", hopcount
@@ -375,7 +374,25 @@ def function2(M,source,dstlist):
 
  #plt.figure(2)
  #nx.draw_graphviz(H,edge_color='b')
+ costlist=[]
+ sumcost=0
+ for i in cost_dstlist:
+    x=nx.dijkstra_path_length(H,source,i)
+    sumcost=sumcost+x
+    costlist.append(x)
 
- res=[totalwt,runtime]
+ costlist.sort()
+ max=costlist[len(costlist)-1]
+ avg=float (sumcost)/len(costlist)
+ median=0
+ if len(costlist)%2 ==0:
+    median_ptr=len(costlist)/2
+    median=float(costlist[median_ptr]+costlist[median_ptr+1])/2
+
+ else:
+    median_ptr=(len(costlist)+1)/2
+    median=float(costlist[median_ptr])
+
+ res=[totalwt,runtime,hopcount,max,avg,median]
  #plt.show()
  return (res)

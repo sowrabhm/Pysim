@@ -22,12 +22,21 @@ runtime2=[]
 runtime4=[]
 runtime5=[]
 runtime6=[]
-for i in range(0,10):
-  subprocess.call(['./hello.sh'])
+hop1=[]
+hop2=[]
+hop4=[]
+hop5=[]
+hop6=[]
+
+subprocess.call(['./hello.sh'])
+
+for i in range(0,8):
+ 
+  
   G=topo.read_topo()   # Get topology from read function
   nodes=G.nodes()      
   dstlist=[]
-  r= random.sample(nodes,80)
+  r= random.sample(nodes,32)
   for i in r:
     dstlist.append(i)  # create destination list
 
@@ -45,22 +54,26 @@ for i in range(0,10):
   res1=function1.function1(G,source,dstlist)
   cost1.append(res1[0])
   runtime1.append(res1[1])
+  hop1.append(res1[2])
   res2=function2.function2(G,source,dstlist2)
   cost2.append(res2[0])
   runtime2.append(res2[1])
-  res4=function4.function4(G,source,dstlist3,7)
+  hop2.append(res2[2])
+  res4=function4.function4(G,source,dstlist3,5)
   cost4.append(res4[0])
   runtime4.append(res4[1])
-  res5=function5.function5(G,source,dstlist4,7)
+  hop4.append(res4[2])
+  res5=function5.function5(G,source,dstlist4,5)
   cost5.append(res5[0])
   runtime5.append(res5[1])
-  res6=function4.function4(G,source,dstlist5,10)
+  hop5.append(res5[2])
+  res6=function4.function4(G,source,dstlist5,8)
   cost6.append(res6[0])
   runtime6.append(res6[1])
-
+  hop6.append(res6[2])
 for i in range(0,len(cost1)):
- print " ",cost1[i],"|",cost2[i],"|",cost4[i],"|",cost5[i],"|",cost6[i],"|",runtime1[i],"|",runtime2[i],"|",runtime4[i],"|",runtime5[i],"|",runtime6[i]
-
+ #print " ",cost1[i],"|",cost2[i],"|",cost4[i],"|",cost5[i],"|",cost6[i],"|",runtime1[i],"|",runtime2[i],"|",runtime4[i],"|",runtime5[i],"|",runtime6[i]
+ print " ", hop1[i], " | ", hop2[i], " | ", hop4[i], " | ", hop5[i], " | ", hop6[i], " | "
 #print (runtime1)
 #print "___________________________________________________________________________________________________________________________________"
 #print (cost2)
@@ -81,6 +94,11 @@ sumrtime4=0
 sumrtime5=0
 sumrtime6=0
 
+sumhop1=0
+sumhop2=0
+sumhop4=0
+sumhop5=0
+sumhop6=0
 
 for i in range(0,len(cost1)):
  sumcost1=sumcost1+cost1[i]
@@ -95,6 +113,12 @@ for i in range(0,len(cost1)):
  sumrtime5=sumrtime5+runtime5[i]
  sumrtime6=sumrtime6+runtime6[i]
 
+ sumhop1=sumhop1+hop1[i]
+ sumhop2=sumhop2+hop2[i]
+ sumhop4=sumhop4+hop4[i]
+ sumhop5=sumhop5+hop5[i]
+ sumhop6=sumhop6+hop6[i]
+
 avcost1=sumcost1/len(cost1)
 avcost2=sumcost2/len(cost1) 
 avcost4=sumcost4/len(cost1)
@@ -106,6 +130,13 @@ avrtime2=sumrtime2/len(runtime1)
 avrtime4=sumrtime4/len(runtime1)
 avrtime5=sumrtime5/len(runtime1)
 avrtime6=sumrtime6/len(runtime1)
+
+avhop1=float (sumhop1)/len(hop1)
+avhop2=float (sumhop2)/len(hop1)
+avhop4=float (sumhop4)/len(hop1)
+avhop5=float (sumhop5)/len(hop1)
+avhop6=float (sumhop6)/len(hop1)
+
 
 
 print 'Average cost1 : =',avcost1
@@ -120,4 +151,10 @@ print 'Average runtime 4 : = ',avrtime4
 print 'Average runtime 5 : = ',avrtime5
 print 'Average runtime 6 : = ',avrtime6
 
+
+print 'Average net util 1 : = ',avhop1
+print 'Average net util 2 : = ',avhop2
+print 'Average net util 4 : = ',avhop4
+print 'Average net util 5 : = ',avhop5
+print 'Average net util 6 : = ',avhop6
 

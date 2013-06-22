@@ -15,4 +15,4 @@ PIM-SM {Protocol Independant Multicast-Sparse Mode}. Parameters for comparison i
 1)The total number of hops / links traversed (Indicates utilization of network)
 2)The average and median time delay from source to each individual destination
 3)The maximum time taken to reach a destination in the multicast group. [Important for some applications with strict time constraint]
-4)Runtime of the simulation. (Can be used to get an approximate idea of the )
+4)Runtime of the simulation. (Can be used to get an approximate idea of the time taken by routers to make decisions)

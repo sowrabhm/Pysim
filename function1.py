@@ -10,7 +10,7 @@ global hopcount
 totalwt=0
 hopcount=0
 #************************************************************************************************************************
-def unicast(next,dst):
+def unicast(G,next,dst):
  cur=next
  if cur==dst:
     a=5
@@ -38,17 +38,18 @@ def unicast(next,dst):
 
 
 #************************************************************************************************************************
-def function1(M,source,dstlist): 
- global G
+def function1(G,source,dstlist): 
+ #global G
  global H
  global totalwt
  global hopcount
- G=M
+ 
  totalwt=0
  hopcount=0
  H=nx.Graph()
  remdstlist=dstlist
  tremdstlist=remdstlist
+ cost_dstlist=list(dstlist)
  start=time.time()
  #*print "There no of destinations is ",len(dstlist),"and they are ",dstlist,"and source is ",source
 
@@ -181,7 +182,7 @@ def function1(M,source,dstlist):
                  wt=G.edge[cur][nexthop2[i]]['weight']
                  H.add_edge(cur,nexthop2[i],weight=wt)
                  #*print "Adding edge from ",cur," to ",nexthop2[i]
-                 unicast(nexthop2[i],table2[i][0])
+                 unicast(G,nexthop2[i],table2[i][0])
                  totalwt=totalwt+wt
                  hopcount=hopcount+1
                  #*print "Now hopcount is ===", hopcount
@@ -238,7 +239,26 @@ def function1(M,source,dstlist):
  #plt.figure(2)
  #nx.draw_graphviz(H,edge_color='b')
 
+ costlist=[]
+ sumcost=0
+ for i in cost_dstlist:
+    x=nx.dijkstra_path_length(H,source,i)
+    sumcost=sumcost+x
+    costlist.append(x)
+    
+ costlist.sort()
+ max=costlist[len(costlist)-1]
+ avg=float (sumcost)/len(costlist)
+ median=0
+ if len(costlist)%2 ==0:
+    median_ptr=len(costlist)/2
+    median=float(costlist[median_ptr]+costlist[median_ptr+1])/2
 
+ else:
+    median_ptr=(len(costlist)+1)/2
+    median=float(costlist[median_ptr])    
+    
+ 
  #plt.show()
 
- return (totalwt,runtime)
+ return (totalwt,runtime,hopcount,max,avg,median)
