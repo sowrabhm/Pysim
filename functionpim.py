@@ -76,9 +76,9 @@ def functionpim(M,source,dstlist):
             
  # plt.figure(1)
  #nx.draw_graphviz(G,edge_color='r')
- plt.figure(2)
- nx.draw_graphviz(H,edge_color='b')
- plt.show()
+ #plt.figure(2)
+ #nx.draw_graphviz(H,edge_color='b')
+ #plt.show()
  end=time.time()
  runtime=end-start
  costlist=[]

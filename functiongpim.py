@@ -22,11 +22,12 @@ def functiongpim(M,source,dstlist):
  hopcount=0
  H=nx.Graph()
  start=time.time()
+ rpoint=110
  dstlistcopy=list(dstlist)
  first=dstlistcopy[len(dstlistcopy)-1]
- path=nx.dijkstra_path(G,first,1)
+ path=nx.dijkstra_path(G,first,rpoint)
  member=[]
- member.append(1)
+ member.append(rpoint)
  for i in range(len(path)):
    if i !=len(path)-1: 
     cur=path[i]
@@ -45,7 +46,7 @@ def functiongpim(M,source,dstlist):
           #print "This node already in graph, so skip "
           continue
        else:
-          path=nx.dijkstra_path(G,node,1)
+          path=nx.dijkstra_path(G,node,rpoint)
           #print "PAth is ", path
           for i in range(len(path)-1):
                   cur=path[i]
@@ -77,24 +78,24 @@ def functiongpim(M,source,dstlist):
             
  #plt.figure(1)
  #nx.draw_graphviz(G,edge_color='r')
- plt.figure(2)
- nx.draw_graphviz(H,edge_color='b')
- plt.show()
+ #plt.figure(2)
+ #nx.draw_graphviz(H,edge_color='b')
+ #plt.show()
  smember=[]
  stempmember=[]
- print "Total wt is ", totalwt,"and hopcount is ",hopcount 
- if source!=1:
-     path=nx.dijkstra_path(G,source,1)
+ #print "Total wt is ", totalwt,"and hopcount is ",hopcount 
+ if source!=rpoint:
+     path=nx.dijkstra_path(G,source,rpoint)
      for i in range(len(path)-1):
                   cur=path[i]
                   next=path[i+1]
                   if i==0:
                      stempmember.append(cur)
                   stempmember.append(next)
-                  print "Cur is ",cur , "and next is ",next
+                  #print "Cur is ",cur , "and next is ",next
 
                   if cur in smember:
-                         print "Cur is already in H and nodes of H are ",member
+                         #print "Cur is already in H and nodes of H are ",member
                          stempmember.remove(cur)
                          stempmember.remove(next)
                          if len(stempmember)!=0:
@@ -102,12 +103,12 @@ def functiongpim(M,source,dstlist):
                                  smember.append(node)
                          break
                   else:
-                         print "Adding edge ",cur ,"--",next
+                         #print "Adding edge ",cur ,"--",next
                          wt=G.edge[cur][next]['weight']
                          H.add_edge(cur,next,weight=wt)
                          totalwt=totalwt+wt
                          hopcount=hopcount+1
-                         print "Total wt is ", totalwt,"and hopcount is ",hopcount
+                         #print "Total wt is ", totalwt,"and hopcount is ",hopcount
 
                          if i==len(path)-2:
                             for node in stempmember:
