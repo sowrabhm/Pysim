@@ -17,27 +17,27 @@ hopcount=0
 def unicast(G,next,dst):
  cur=next
  if cur==dst:
-    #*print "Reached destination ",cur
+    print "Reached destination ",cur
     a=5
  else:
     path=nx.dijkstra_path(G,cur,dst)
     
     for i in xrange(0,len(path)):
-        #*print"Unicasting :Currently at node ",path[i]
+        print"Unicasting :Currently at node ",path[i]
         if i==len(path)-1:
-           #*print "Reached destination ",path[i]
+           print "Reached destination ",path[i]
            a=5
         if i!=len(path)-1:
            wt=G.edge[cur][path[i+1]]['weight']
            H.add_edge(cur,path[i+1],weight=wt)
-           #*print"Adding edge from ",cur," to ",path[i+1]
+           print"Adding edge from ",cur," to ",path[i+1]
            global totalwt
            global hopcount        
            totalwt=totalwt+wt
            hopcount=hopcount+1
-           #*print"Now hop count is =",hopcount
+           print"Now hop count is =",hopcount
            cur=path[i+1]
-           #*print"Next hop is ",path[i+1]
+           print"Next hop is ",path[i+1]
 def cost_split(G,cur,tremdstlist):
  
  csplit=0
@@ -133,7 +133,7 @@ def function2fast(G,source,dstlist):
  hopcount=0
  H=nx.Graph()
  
- #*print "\n  ______________________ SIMULATION TO DETERMINE MULTICAST PATH _________________________"
+ print "\n  ______________________ SIMULATION TO DETERMINE MULTICAST PATH _________________________"
  #dstlist = raw_input("\n Enter destination list: ")
  #nodes=G.nodes()
  #dstlist=[]
@@ -182,22 +182,26 @@ def function2fast(G,source,dstlist):
        prednext=table2nexthop.pop()
        dstflag=0
        nextchkflag=1
-   #*print "Currently at node             --->",cur
-   #*print "Now delivering to destinations--->  ",tremdstlist
+   print "Currently at node             --->",cur
+   print "Now delivering to destinations--->  ",tremdstlist
+   if cur==34 or tremdstlist==[107,109]:
+      print "Nextchkflag is ",nextchkflag
    for n in tremdstlist:
        if cur==n:
-          #*print"Reached destination ",cur
+          print"Reached destination ",cur
           tremdstlist.remove(cur)    
    dstno=len(tremdstlist)
    if dstno==0:
            dstflag=1
            continue
-   if (nextchkflag==0):
+   #if (nextchkflag==0):
+   if len(tremdstlist)!=0:
        paths=[[] for i in xrange(dstno)]       # paths is a 2d list ,containing shortest path to every destination
        count=0
        for j in tremdstlist:
            paths[count]=nx.dijkstra_path(G,cur,tremdstlist[count])
-           #*print(paths[count])
+           if cur==34 or tremdstlist==[107,109]:  
+            print "Path found is ",paths[count]
            count=count+1                          # Outermost loop to run till all destinations reached
   
        nexthop=[]
@@ -209,30 +213,30 @@ def function2fast(G,source,dstlist):
               flag1=1                         # if flag 1=1 means there is split
 
 
-   if (nextchkflag==1):
+   '''if (nextchkflag==1):
        nextchkflag=0
        nexthop=[]
-       nexthop.append(prednext)
+       nexthop.append(prednext)'''
    if flag1==0:                            # Condition of common next hop for all
-       #*print "The next hop is ",nexthop[0],"for all destinations"
-       #*print "Sending packet to nexthop",nexthop[0]  
+       print "The next hop is ",nexthop[0],"for all destinations"
+       print "Sending packet to nexthop",nexthop[0]  
       
        wt=G.edge[cur][nexthop[0]]['weight']
        H.add_edge(cur,nexthop[0],weight=wt)
-       #*print "Adding edge from ",cur, " to",nexthop[0]
+       print "Adding edge from ",cur, " to",nexthop[0]
        totalwt=totalwt+wt
        hopcount=hopcount+1
-       #*print "Now hopcount is ==", hopcount
+       print "Now hopcount is ==", hopcount
 
        cur=nexthop[0]
       
    if flag1==1:
-       #*print "Splitting packet ...........?"
+       print "Splitting packet ...........?"
        csplit=cost_split(G,cur,tremdstlist)
-       #*print "csplit cost  :  ",csplit
+       print "csplit cost  :  ",csplit
        result= cost_nsplit(G,cur,tremdstlist)
        cnsplit=result[1]
-       #*print "cnsplit cost : ",cnsplit
+       print "cnsplit cost : ",cnsplit
        if cnsplit<=csplit:
             nt=result[0]   
             wt=G.edge[cur][nt]['weight']
@@ -277,33 +281,33 @@ def function2fast(G,source,dstlist):
                   temp=tremdstlist[i]
                   table2[location].append(temp)
                  
-       #*print"Table2 is ",table2
-       #*print"nexthop2 is ",nexthop2
+       print"Table2 is ",table2
+       print"nexthop2 is ",nexthop2
        copytable=copy.deepcopy(table2)
        copynexthop=list(nexthop2)
    #   print "nexthop2 is",nexthop2
       
        for i in xrange(nexthopcnt):
-              #*print"the ",i,"th  set is ",table2[i],"and its length is ",len(table2[i])            
+              print"the ",i,"th  set is ",table2[i],"and its length is ",len(table2[i])            
               if len(table2[i])==1:
                 
-                 #*print "One pkt copy sent to next hop ",nexthop2[i],"for the destination",table2[i][0]
-                 #*print "Current node is ",cur
+                 print "One pkt copy sent to next hop ",nexthop2[i],"for the destination",table2[i][0]
+                 print "Current node is ",cur
                  wt=G.edge[cur][nexthop2[i]]['weight']
                  H.add_edge(cur,nexthop2[i],weight=wt)
-                 #*print "Adding edge from ",cur," to ",nexthop2[i]
+                 print "Adding edge from ",cur," to ",nexthop2[i]
                  unicast(G,nexthop2[i],table2[i][0])
                  totalwt=totalwt+wt
                  hopcount=hopcount+1
-                 #*print "Now hopcount is ===", hopcount
-                 #*print "Removing nexthop ",nexthop2[i],"and destination ",table2[i][0]
+                 print "Now hopcount is ===", hopcount
+                 print "Removing nexthop ",nexthop2[i],"and destination ",table2[i][0]
                  tremdstlist.remove(table2[i][0])
                
-                 #*print "copynexthop is ",copynexthop,"when i is=",i  
+                 print "copynexthop is ",copynexthop,"when i is=",i  
                  copynexthop.remove(nexthop2[i])
-                 #*print "copynexthop after pop is ",copynexthop
+                 print "copynexthop after pop is ",copynexthop
                  copytable.remove(table2[i])
-                 #print "now table2 is ",table2 ,"and nexthop2 is ",nexthop2
+                 print "now table2 is ",table2 ,"and nexthop2 is ",nexthop2
        if len(tremdstlist)==0:
              dstflag=1
              continue
@@ -319,13 +323,13 @@ def function2fast(G,source,dstlist):
              nt=copynexthop[pushcount-1]
          else:
              nt=nexthop[1] 
-         #*print "copynexthop is now ",copynexthop  
+         print "copynexthop is now ",copynexthop  
          wt=G.edge[cur][nt]['weight']
          H.add_edge(cur,nt,weight=wt)    
-         #*print "Adding edge from ",cur, "to nexthop",nt
+         print "Adding edge from ",cur, "to nexthop",nt
          totalwt=totalwt+wt
          hopcount=hopcount+1
-         #*print "Now hopcount is ====", hopcount
+         print "Now hopcount is ====", hopcount
          cur=nt
        
       
@@ -364,7 +368,51 @@ def function2fast(G,source,dstlist):
  else:
     median_ptr=(len(costlist)+1)/2
     median=float(costlist[median_ptr])
-
+ 
+ mytotal=0
+ for edge in H.edges():
+    wt=H.edge[edge[0]][edge[1]]['weight']
+    mytotal=mytotal+wt 
  res=[totalwt,runtime,hopcount,max,avg,median]
+ print "**************** Total cost is ",mytotal,"***************"
+ print "**************** Total hop count is ",H.number_of_edges(),"***************"
+ print "*****************Total nodes are ",H.number_of_nodes(),"*************" 
+ plt.figure(1)
+ nx.draw_graphviz(G,edge_color='r')
+ plt.figure(2)
+ nx.draw_graphviz(H,edge_color='b')
+ plt.show()
+
  #plt.show()
  return (res)
+if __name__ == "__main__":
+ M=nx.Graph()
+ data = []
+ f = open('jellyfish_topo.data', 'r')
+ for line in f.readlines():
+    vector = line.split()
+    x1=int(vector[0])
+    if len(vector)<3:
+       break
+    x2=int(vector[1])
+    w=float(vector[2])
+    M.add_node(x1)
+    M.add_node(x2)
+    M.add_edge(x1,x2,weight=w)
+
+ nodes=M.nodes()
+ dstlist=[]
+ #r= random.sample(nodes,48)
+ #for i in range(65,140):
+ #   dstlist.append(i)  # create destination list
+ f = open('/home/sowrabh/Desktop/pysimfiles/destinations.txt', 'r')
+ for line in f.readlines():
+     dst=int(line.strip())
+     dstlist.append(dst)
+ source=1
+ if source in dstlist:
+  dstlist.remove(source)
+
+ hopcount=function2fast(M,source,dstlist)
+ #print "Hopcount = ",hopcount[2]
+

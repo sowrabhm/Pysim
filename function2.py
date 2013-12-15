@@ -220,7 +220,8 @@ def function2(G,source,dstlist):
    if dstno==0:
            dstflag=1
            continue
-   if (nextchkflag==0):
+   #if (nextchkflag==0):
+   if len(tremdstlist)!=0:
        paths=[[] for i in range(dstno)]       # paths is a 2d list ,containing shortest path to every destination
        count=0
        for j in tremdstlist:
@@ -237,10 +238,10 @@ def function2(G,source,dstlist):
               flag1=1                         # if flag 1=1 means there is split
 
 
-   if (nextchkflag==1):
+   '''if (nextchkflag==1):
        nextchkflag=0
        nexthop=[]
-       nexthop.append(prednext)
+       nexthop.append(prednext)'''
    if flag1==0:                            # Condition of common next hop for all
        #*print "The next hop is ",nexthop[0],"for all destinations"
        #*print "Sending packet to nexthop",nexthop[0]  
@@ -261,7 +262,7 @@ def function2(G,source,dstlist):
        result= cost_nsplit(G,cur,tremdstlist)
        cnsplit=result[1]
        #*print "cnsplit cost : ",cnsplit
-       if cnsplit<=csplit:
+       if 0.95*cnsplit<=csplit:
             nt=result[0]   
             wt=G.edge[cur][nt]['weight']
             H.add_edge(cur,nt,weight=wt)
@@ -357,23 +358,26 @@ def function2(G,source,dstlist):
          cur=nt
        
       
-
- #*print "**************** Total cost is ",totalwt,"***************"
- #*print "**************** Total hop count is ",hopcount,"***************"
+ mytotal=0
+ for edge in H.edges():
+    wt=H.edge[edge[0]][edge[1]]['weight']
+    mytotal=mytotal+wt
+ print "**************** Total cost is ",mytotal,"***************"
+ print "**************** Total hop count is ",H.number_of_edges(),"***************"
  utility=float (hopcount)/G.number_of_edges() 
 
 
  percent=utility*100
- #*print "***************Utilisation of the network is",percent," % ***************"
+ print "***************Utilisation of the network is",percent," % ***************"
  end=time.time()
  runtime=end-start
- #*print 'Runtime is ',runtime
- #plt.figure(1)
- #nx.draw_graphviz(G,edge_color='r')
+ print 'Runtime is ',runtime
+ plt.figure(1)
+ nx.draw_graphviz(G,edge_color='r')
 
 
- #plt.figure(2)
- #nx.draw_graphviz(H,edge_color='b')
+ plt.figure(2)
+ nx.draw_graphviz(H,edge_color='b')
  costlist=[]
  sumcost=0
  for i in cost_dstlist:
@@ -394,5 +398,38 @@ def function2(G,source,dstlist):
     median=float(costlist[median_ptr])
 
  res=[totalwt,runtime,hopcount,max,avg,median]
- #plt.show()
+ plt.show()
  return (res)
+
+
+if __name__ == "__main__":
+ M=nx.Graph()
+ data = []
+ f = open('jellyfish_topo.data', 'r')
+ for line in f.readlines():
+    vector = line.split()
+    x1=int(vector[0])
+    if len(vector)<3:
+       break
+    x2=int(vector[1])
+    w=float(vector[2])
+    M.add_node(x1)
+    M.add_node(x2)
+    M.add_edge(x1,x2,weight=w)
+
+ nodes=M.nodes()
+ dstlist=[]
+ #r= random.sample(nodes,48)
+ #for i in range(65,140):
+ #   dstlist.append(i)  # create destination list
+ f = open('/home/sowrabh/Desktop/pysimfiles/destinations.txt', 'r')
+ for line in f.readlines():
+     dst=int(line.strip())
+     dstlist.append(dst)
+ source=1
+ if source in dstlist:
+  dstlist.remove(source)
+
+ hopcount=function2(M,source,dstlist)
+ #print "Hopcount = ",hopcount[2]
+
