@@ -49,8 +49,9 @@ def cost_split(G,cur,tremdstlist):
            tablesplit[num]=nx.dijkstra_path(G,cur,tremdstlist[num])
      num=num+1
      
- length=nx.all_pairs_dijkstra_path_length(G)
- csplit=csplit+length[cur][tremdstlist[0]]
+ #length=nx.all_pairs_dijkstra_path_length(G)
+ #csplit=csplit+length[cur][tremdstlist[0]]
+ csplit=nx.dijkstra_path_length(G,cur,tremdstlist[0])
  #print "CSPLIT added cost from :",cur, "to ",tremdstlist[0],"as ",length[cur][tremdstlist[0]]
  #*print "tablesplit[0]=",tablesplit[0]
  for x in xrange(1,num):
@@ -377,6 +378,7 @@ def function2fast(G,source,dstlist):
  print "**************** Total cost is ",mytotal,"***************"
  print "**************** Total hop count is ",H.number_of_edges(),"***************"
  print "*****************Total nodes are ",H.number_of_nodes(),"*************" 
+ print "Runtime is :",runtime
  plt.figure(1)
  nx.draw_graphviz(G,edge_color='r')
  plt.figure(2)
