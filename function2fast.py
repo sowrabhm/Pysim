@@ -49,8 +49,7 @@ def cost_split(G,cur,tremdstlist):
            tablesplit[num]=nx.dijkstra_path(G,cur,tremdstlist[num])
      num=num+1
      
- #length=nx.all_pairs_dijkstra_path_length(G)
- #csplit=csplit+length[cur][tremdstlist[0]]
+ 
  csplit=nx.dijkstra_path_length(G,cur,tremdstlist[0])
  #print "CSPLIT added cost from :",cur, "to ",tremdstlist[0],"as ",length[cur][tremdstlist[0]]
  #*print "tablesplit[0]=",tablesplit[0]
