@@ -1,0 +1,417 @@
+
+  ______________________ SIMULATION TO DETERMINE MULTICAST PATH _________________________
+Currently at node             ---> 1
+Now delivering to destinations--->   [52, 40, 120, 22, 103, 8, 113, 123, 90, 62, 79, 63, 71, 122, 138, 117, 133, 20, 18, 73, 121, 43, 97, 21, 27]
+Splitting packet ...........?
+csplit cost  :   1151.0
+cnsplit cost :  1164.0
+Table2 is  [[52, 40, 120, 113, 123, 90, 62, 63, 71, 18, 73, 97], [22], [103], [8], [79], [122, 138, 121, 21], [117], [133], [20], [43], [27]]
+nexthop2 is  [41, 31, 78, 8, 79, 35, 36, 55, 20, 54, 27]
+the  0 th  set is  [52, 40, 120, 113, 123, 90, 62, 63, 71, 18, 73, 97] and its length is  12
+the  1 th  set is  [22] and its length is  1
+One pkt copy sent to next hop  31 for the destination 22
+Current node is  1
+Adding edge from  1  to  31
+Unicasting :Currently at node  31
+Adding edge from  31  to  22
+Now hop count is = 1
+Next hop is  22
+Unicasting :Currently at node  22
+Reached destination  22
+Now hopcount is === 1
+Removing nexthop  31 and destination  22
+copynexthop is  [41, 31, 78, 8, 79, 35, 36, 55, 20, 54, 27] when i is= 1
+copynexthop after pop is  [41, 78, 8, 79, 35, 36, 55, 20, 54, 27]
+now table2 is  [[52, 40, 120, 113, 123, 90, 62, 63, 71, 18, 73, 97], [22], [103], [8], [79], [122, 138, 121, 21], [117], [133], [20], [43], [27]] and nexthop2 is  [41, 31, 78, 8, 79, 35, 36, 55, 20, 54, 27]
+the  2 th  set is  [103] and its length is  1
+One pkt copy sent to next hop  78 for the destination 103
+Current node is  1
+Adding edge from  1  to  78
+Unicasting :Currently at node  78
+Adding edge from  78  to  103
+Now hop count is = 2
+Next hop is  103
+Unicasting :Currently at node  103
+Reached destination  103
+Now hopcount is === 2
+Removing nexthop  78 and destination  103
+copynexthop is  [41, 78, 8, 79, 35, 36, 55, 20, 54, 27] when i is= 2
+copynexthop after pop is  [41, 8, 79, 35, 36, 55, 20, 54, 27]
+now table2 is  [[52, 40, 120, 113, 123, 90, 62, 63, 71, 18, 73, 97], [22], [103], [8], [79], [122, 138, 121, 21], [117], [133], [20], [43], [27]] and nexthop2 is  [41, 31, 78, 8, 79, 35, 36, 55, 20, 54, 27]
+the  3 th  set is  [8] and its length is  1
+One pkt copy sent to next hop  8 for the destination 8
+Current node is  1
+Adding edge from  1  to  8
+Reached destination  8
+Now hopcount is === 3
+Removing nexthop  8 and destination  8
+copynexthop is  [41, 8, 79, 35, 36, 55, 20, 54, 27] when i is= 3
+copynexthop after pop is  [41, 79, 35, 36, 55, 20, 54, 27]
+now table2 is  [[52, 40, 120, 113, 123, 90, 62, 63, 71, 18, 73, 97], [22], [103], [8], [79], [122, 138, 121, 21], [117], [133], [20], [43], [27]] and nexthop2 is  [41, 31, 78, 8, 79, 35, 36, 55, 20, 54, 27]
+the  4 th  set is  [79] and its length is  1
+One pkt copy sent to next hop  79 for the destination 79
+Current node is  1
+Adding edge from  1  to  79
+Reached destination  79
+Now hopcount is === 4
+Removing nexthop  79 and destination  79
+copynexthop is  [41, 79, 35, 36, 55, 20, 54, 27] when i is= 4
+copynexthop after pop is  [41, 35, 36, 55, 20, 54, 27]
+now table2 is  [[52, 40, 120, 113, 123, 90, 62, 63, 71, 18, 73, 97], [22], [103], [8], [79], [122, 138, 121, 21], [117], [133], [20], [43], [27]] and nexthop2 is  [41, 31, 78, 8, 79, 35, 36, 55, 20, 54, 27]
+the  5 th  set is  [122, 138, 121, 21] and its length is  4
+the  6 th  set is  [117] and its length is  1
+One pkt copy sent to next hop  36 for the destination 117
+Current node is  1
+Adding edge from  1  to  36
+Unicasting :Currently at node  36
+Adding edge from  36  to  117
+Now hop count is = 3
+Next hop is  117
+Unicasting :Currently at node  117
+Reached destination  117
+Now hopcount is === 5
+Removing nexthop  36 and destination  117
+copynexthop is  [41, 35, 36, 55, 20, 54, 27] when i is= 6
+copynexthop after pop is  [41, 35, 55, 20, 54, 27]
+now table2 is  [[52, 40, 120, 113, 123, 90, 62, 63, 71, 18, 73, 97], [22], [103], [8], [79], [122, 138, 121, 21], [117], [133], [20], [43], [27]] and nexthop2 is  [41, 31, 78, 8, 79, 35, 36, 55, 20, 54, 27]
+the  7 th  set is  [133] and its length is  1
+One pkt copy sent to next hop  55 for the destination 133
+Current node is  1
+Adding edge from  1  to  55
+Unicasting :Currently at node  55
+Adding edge from  55  to  133
+Now hop count is = 4
+Next hop is  133
+Unicasting :Currently at node  133
+Reached destination  133
+Now hopcount is === 6
+Removing nexthop  55 and destination  133
+copynexthop is  [41, 35, 55, 20, 54, 27] when i is= 7
+copynexthop after pop is  [41, 35, 20, 54, 27]
+now table2 is  [[52, 40, 120, 113, 123, 90, 62, 63, 71, 18, 73, 97], [22], [103], [8], [79], [122, 138, 121, 21], [117], [133], [20], [43], [27]] and nexthop2 is  [41, 31, 78, 8, 79, 35, 36, 55, 20, 54, 27]
+the  8 th  set is  [20] and its length is  1
+One pkt copy sent to next hop  20 for the destination 20
+Current node is  1
+Adding edge from  1  to  20
+Reached destination  20
+Now hopcount is === 7
+Removing nexthop  20 and destination  20
+copynexthop is  [41, 35, 20, 54, 27] when i is= 8
+copynexthop after pop is  [41, 35, 54, 27]
+now table2 is  [[52, 40, 120, 113, 123, 90, 62, 63, 71, 18, 73, 97], [22], [103], [8], [79], [122, 138, 121, 21], [117], [133], [20], [43], [27]] and nexthop2 is  [41, 31, 78, 8, 79, 35, 36, 55, 20, 54, 27]
+the  9 th  set is  [43] and its length is  1
+One pkt copy sent to next hop  54 for the destination 43
+Current node is  1
+Adding edge from  1  to  54
+Unicasting :Currently at node  54
+Adding edge from  54  to  43
+Now hop count is = 5
+Next hop is  43
+Unicasting :Currently at node  43
+Reached destination  43
+Now hopcount is === 8
+Removing nexthop  54 and destination  43
+copynexthop is  [41, 35, 54, 27] when i is= 9
+copynexthop after pop is  [41, 35, 27]
+now table2 is  [[52, 40, 120, 113, 123, 90, 62, 63, 71, 18, 73, 97], [22], [103], [8], [79], [122, 138, 121, 21], [117], [133], [20], [43], [27]] and nexthop2 is  [41, 31, 78, 8, 79, 35, 36, 55, 20, 54, 27]
+the  10 th  set is  [27] and its length is  1
+One pkt copy sent to next hop  27 for the destination 27
+Current node is  1
+Adding edge from  1  to  27
+Reached destination  27
+Now hopcount is === 9
+Removing nexthop  27 and destination  27
+copynexthop is  [41, 35, 27] when i is= 10
+copynexthop after pop is  [41, 35]
+now table2 is  [[52, 40, 120, 113, 123, 90, 62, 63, 71, 18, 73, 97], [22], [103], [8], [79], [122, 138, 121, 21], [117], [133], [20], [43], [27]] and nexthop2 is  [41, 31, 78, 8, 79, 35, 36, 55, 20, 54, 27]
+copynexthop is now  [41, 35]
+Adding edge from  1 to nexthop 35
+Now hopcount is ==== 10
+Currently at node             ---> 35
+Now delivering to destinations--->   [122, 138, 121, 21]
+The next hop is  21 for all destinations
+Sending packet to nexthop 21
+Adding edge from  35  to 21
+Now hopcount is == 11
+Currently at node             ---> 21
+Now delivering to destinations--->   [122, 138, 121, 21]
+Reached destination  21
+Splitting packet ...........?
+csplit cost  :   156.0
+cnsplit cost :  143.0
+Currently at node             ---> 19
+Now delivering to destinations--->   [122, 138, 121]
+Splitting packet ...........?
+csplit cost  :   121.0
+cnsplit cost :  122.0
+Table2 is  [[122, 138], [121]]
+nexthop2 is  [83, 79]
+the  0 th  set is  [122, 138] and its length is  2
+the  1 th  set is  [121] and its length is  1
+One pkt copy sent to next hop  79 for the destination 121
+Current node is  19
+Adding edge from  19  to  79
+Unicasting :Currently at node  79
+Adding edge from  79  to  121
+Now hop count is = 6
+Next hop is  121
+Unicasting :Currently at node  121
+Reached destination  121
+Now hopcount is === 12
+Removing nexthop  79 and destination  121
+copynexthop is  [83, 79] when i is= 1
+copynexthop after pop is  [83]
+now table2 is  [[122, 138], [121]] and nexthop2 is  [83, 79]
+copynexthop is now  [83]
+Adding edge from  19 to nexthop 83
+Now hopcount is ==== 13
+Currently at node             ---> 83
+Now delivering to destinations--->   [122, 138]
+Splitting packet ...........?
+csplit cost  :   64.0
+cnsplit cost :  99999
+Table2 is  [[122], [138]]
+nexthop2 is  [122, 138]
+the  0 th  set is  [122] and its length is  1
+One pkt copy sent to next hop  122 for the destination 122
+Current node is  83
+Adding edge from  83  to  122
+Reached destination  122
+Now hopcount is === 14
+Removing nexthop  122 and destination  122
+copynexthop is  [122, 138] when i is= 0
+copynexthop after pop is  [138]
+now table2 is  [[122], [138]] and nexthop2 is  [122, 138]
+the  1 th  set is  [138] and its length is  1
+One pkt copy sent to next hop  138 for the destination 138
+Current node is  83
+Adding edge from  83  to  138
+Reached destination  138
+Now hopcount is === 15
+Removing nexthop  138 and destination  138
+copynexthop is  [138] when i is= 1
+copynexthop after pop is  []
+now table2 is  [[122], [138]] and nexthop2 is  [122, 138]
+Currently at node             ---> 1
+Now delivering to destinations--->   [52, 40, 120, 113, 123, 90, 62, 63, 71, 18, 73, 97]
+The next hop is  41 for all destinations
+Sending packet to nexthop 41
+Adding edge from  1  to 41
+Now hopcount is == 16
+Currently at node             ---> 41
+Now delivering to destinations--->   [52, 40, 120, 113, 123, 90, 62, 63, 71, 18, 73, 97]
+Splitting packet ...........?
+csplit cost  :   457.0
+cnsplit cost :  494.0
+Table2 is  [[52], [40, 120, 113, 63, 71, 97], [123, 90, 62, 18, 73]]
+nexthop2 is  [60, 40, 26]
+the  0 th  set is  [52] and its length is  1
+One pkt copy sent to next hop  60 for the destination 52
+Current node is  41
+Adding edge from  41  to  60
+Unicasting :Currently at node  60
+Adding edge from  60  to  52
+Now hop count is = 7
+Next hop is  52
+Unicasting :Currently at node  52
+Reached destination  52
+Now hopcount is === 17
+Removing nexthop  60 and destination  52
+copynexthop is  [60, 40, 26] when i is= 0
+copynexthop after pop is  [40, 26]
+now table2 is  [[52], [40, 120, 113, 63, 71, 97], [123, 90, 62, 18, 73]] and nexthop2 is  [60, 40, 26]
+the  1 th  set is  [40, 120, 113, 63, 71, 97] and its length is  6
+the  2 th  set is  [123, 90, 62, 18, 73] and its length is  5
+copynexthop is now  [40, 26]
+Adding edge from  41 to nexthop 26
+Now hopcount is ==== 18
+Currently at node             ---> 26
+Now delivering to destinations--->   [123, 90, 62, 18, 73]
+Splitting packet ...........?
+csplit cost  :   125.0
+cnsplit cost :  143.0
+Table2 is  [[123, 90], [62, 18], [73]]
+nexthop2 is  [34, 76, 73]
+the  0 th  set is  [123, 90] and its length is  2
+the  1 th  set is  [62, 18] and its length is  2
+the  2 th  set is  [73] and its length is  1
+One pkt copy sent to next hop  73 for the destination 73
+Current node is  26
+Adding edge from  26  to  73
+Reached destination  73
+Now hopcount is === 19
+Removing nexthop  73 and destination  73
+copynexthop is  [34, 76, 73] when i is= 2
+copynexthop after pop is  [34, 76]
+now table2 is  [[123, 90], [62, 18], [73]] and nexthop2 is  [34, 76, 73]
+copynexthop is now  [34, 76]
+Adding edge from  26 to nexthop 76
+Now hopcount is ==== 20
+Currently at node             ---> 76
+Now delivering to destinations--->   [62, 18]
+The next hop is  18 for all destinations
+Sending packet to nexthop 18
+Adding edge from  76  to 18
+Now hopcount is == 21
+Currently at node             ---> 18
+Now delivering to destinations--->   [62, 18]
+Reached destination  18
+The next hop is  62 for all destinations
+Sending packet to nexthop 62
+Adding edge from  18  to 62
+Now hopcount is == 22
+Currently at node             ---> 62
+Now delivering to destinations--->   [62]
+Reached destination  62
+Currently at node             ---> 26
+Now delivering to destinations--->   [123, 90]
+The next hop is  34 for all destinations
+Sending packet to nexthop 34
+Adding edge from  26  to 34
+Now hopcount is == 23
+Currently at node             ---> 34
+Now delivering to destinations--->   [123, 90]
+The next hop is  29 for all destinations
+Sending packet to nexthop 29
+Adding edge from  34  to 29
+Now hopcount is == 24
+Currently at node             ---> 29
+Now delivering to destinations--->   [123, 90]
+Splitting packet ...........?
+csplit cost  :   52.0
+cnsplit cost :  99999
+Table2 is  [[123], [90]]
+nexthop2 is  [123, 90]
+the  0 th  set is  [123] and its length is  1
+One pkt copy sent to next hop  123 for the destination 123
+Current node is  29
+Adding edge from  29  to  123
+Reached destination  123
+Now hopcount is === 25
+Removing nexthop  123 and destination  123
+copynexthop is  [123, 90] when i is= 0
+copynexthop after pop is  [90]
+now table2 is  [[123], [90]] and nexthop2 is  [123, 90]
+the  1 th  set is  [90] and its length is  1
+One pkt copy sent to next hop  90 for the destination 90
+Current node is  29
+Adding edge from  29  to  90
+Reached destination  90
+Now hopcount is === 26
+Removing nexthop  90 and destination  90
+copynexthop is  [90] when i is= 1
+copynexthop after pop is  []
+now table2 is  [[123], [90]] and nexthop2 is  [123, 90]
+Currently at node             ---> 41
+Now delivering to destinations--->   [40, 120, 113, 63, 71, 97]
+The next hop is  60 for all destinations
+Sending packet to nexthop 60
+Adding edge from  41  to 60
+Now hopcount is == 27
+Currently at node             ---> 60
+Now delivering to destinations--->   [40, 120, 113, 63, 71, 97]
+Splitting packet ...........?
+csplit cost  :   274.0
+cnsplit cost :  270.0
+Currently at node             ---> 41
+Now delivering to destinations--->   [40, 120, 113, 63, 71, 97]
+The next hop is  40 for all destinations
+Sending packet to nexthop 40
+Adding edge from  41  to 40
+Now hopcount is == 28
+Currently at node             ---> 40
+Now delivering to destinations--->   [40, 120, 113, 63, 71, 97]
+Reached destination  40
+Splitting packet ...........?
+csplit cost  :   256.0
+cnsplit cost :  264.0
+Table2 is  [[120, 63, 71], [113], [97]]
+nexthop2 is  [48, 69, 24]
+the  0 th  set is  [120, 63, 71] and its length is  3
+the  1 th  set is  [113] and its length is  1
+One pkt copy sent to next hop  69 for the destination 113
+Current node is  40
+Adding edge from  40  to  69
+Unicasting :Currently at node  69
+Adding edge from  69  to  113
+Now hop count is = 8
+Next hop is  113
+Unicasting :Currently at node  113
+Reached destination  113
+Now hopcount is === 29
+Removing nexthop  69 and destination  113
+copynexthop is  [48, 69, 24] when i is= 1
+copynexthop after pop is  [48, 24]
+now table2 is  [[120, 63, 71], [113], [97]] and nexthop2 is  [48, 69, 24]
+the  2 th  set is  [97] and its length is  1
+One pkt copy sent to next hop  24 for the destination 97
+Current node is  40
+Adding edge from  40  to  24
+Unicasting :Currently at node  24
+Adding edge from  24  to  97
+Now hop count is = 9
+Next hop is  97
+Unicasting :Currently at node  97
+Reached destination  97
+Now hopcount is === 30
+Removing nexthop  24 and destination  97
+copynexthop is  [48, 24] when i is= 2
+copynexthop after pop is  [48]
+now table2 is  [[120, 63, 71], [113], [97]] and nexthop2 is  [48, 69, 24]
+copynexthop is now  [48]
+Adding edge from  40 to nexthop 69
+Now hopcount is ==== 31
+Currently at node             ---> 69
+Now delivering to destinations--->   [120, 63, 71]
+The next hop is  40 for all destinations
+Sending packet to nexthop 40
+Adding edge from  69  to 40
+Now hopcount is == 32
+Currently at node             ---> 40
+Now delivering to destinations--->   [120, 63, 71]
+The next hop is  48 for all destinations
+Sending packet to nexthop 48
+Adding edge from  40  to 48
+Now hopcount is == 33
+Currently at node             ---> 48
+Now delivering to destinations--->   [120, 63, 71]
+Splitting packet ...........?
+csplit cost  :   95.0
+cnsplit cost :  129.0
+Table2 is  [[120], [63, 71]]
+nexthop2 is  [72, 71]
+the  0 th  set is  [120] and its length is  1
+One pkt copy sent to next hop  72 for the destination 120
+Current node is  48
+Adding edge from  48  to  72
+Unicasting :Currently at node  72
+Adding edge from  72  to  15
+Now hop count is = 10
+Next hop is  15
+Unicasting :Currently at node  15
+Adding edge from  15  to  120
+Now hop count is = 11
+Next hop is  120
+Unicasting :Currently at node  120
+Reached destination  120
+Now hopcount is === 34
+Removing nexthop  72 and destination  120
+copynexthop is  [72, 71] when i is= 0
+copynexthop after pop is  [71]
+now table2 is  [[120], [63, 71]] and nexthop2 is  [72, 71]
+the  1 th  set is  [63, 71] and its length is  2
+copynexthop is now  [71]
+Adding edge from  48 to nexthop 71
+Now hopcount is ==== 35
+Currently at node             ---> 71
+Now delivering to destinations--->   [63, 71]
+Reached destination  71
+The next hop is  63 for all destinations
+Sending packet to nexthop 63
+Adding edge from  71  to 63
+Now hopcount is == 36
+Currently at node             ---> 63
+Now delivering to destinations--->   [63]
+Reached destination  63
+**************** Total cost is  1037.0 ***************
+**************** Total hop count is  45 ***************
