@@ -1,3 +1,4 @@
+import math
 import random
 import time
 import copy
@@ -9,6 +10,7 @@ global totalwt
 global hopcount
 totalwt=0
 hopcount=0
+prev_node=None
 #************************************************************************************************************************
 
 
@@ -17,20 +19,20 @@ hopcount=0
 def unicast(G,next,dst):
  cur=next
  if cur==dst:
-    #*print "Reached destination ",cur
+    #print "Reached destination ",cur
     a=5
  else:
     path=nx.dijkstra_path(G,cur,dst)
     
     for i in range(0,len(path)):
-        #*print"Unicasting :Currently at node ",path[i]
+        #print"Unicasting :Currently at node ",path[i]
         if i==len(path)-1:
-           #*print "Reached destination ",path[i]
+           #print "Reached destination ",path[i]
            a=5
         if i!=len(path)-1:
            wt=G.edge[cur][path[i+1]]['weight']
            H.add_edge(cur,path[i+1],weight=wt)
-           #*print"Adding edge from ",cur," to ",path[i+1]
+           #print"Adding edge from ",cur," to ",path[i+1]
            global totalwt
            global hopcount        
            totalwt=totalwt+wt
@@ -49,8 +51,8 @@ def cost_split(G,cur,tremdstlist):
            tablesplit[num]=nx.dijkstra_path(G,cur,tremdstlist[num])
      num=num+1
      
- length=nx.all_pairs_dijkstra_path_length(G)
- csplit=csplit+length[cur][tremdstlist[0]]
+ #length=nx.all_pairs_dijkstra_path_length(G)
+ csplit=nx.dijkstra_path_length(G,cur,tremdstlist[0])
  #print "CSPLIT added cost from :",cur, "to ",tremdstlist[0],"as ",length[cur][tremdstlist[0]]
  #*print "tablesplit[0]=",tablesplit[0]
  for x in range(1,num):
@@ -66,17 +68,44 @@ def cost_split(G,cur,tremdstlist):
  return csplit
 
 def cost_nsplit(G,cur,tremdstlist):
- #*print "Entering cnsplit"
+ #print "Entering cnsplit"
+ alt_flag=0
  cnsplit=[]
+ dest_grp=[]
  next=[]
  next2=[]
+ targets=[]
+ path_table=[]
  tremdstlist2=list(tremdstlist)
  tablensplit=[[]  for i in range(len(tremdstlist))]
  num=0
+
  for j in tremdstlist:
+     present_flag=0
      tablensplit[num]=nx.dijkstra_path(G,cur,tremdstlist[num])
-     if (tablensplit[num][1] not in next2):
+     #print "tablensplit[",num,"] is ",tablensplit[num]
+     for next in next2:
+        if tablensplit[num][1]==next:
+             ptr=next2.index(next)
+             present_flag=1
+             dest_grp[ptr].append(j)
+             index=0
+             #print "Len of path table =",len(path_table[ptr])," len of tablensplit=",len(tablensplit[num])
+             while path_table[ptr][index]==tablensplit[num][index]:
+                   if index==len(path_table[ptr])-1 or index==len(tablensplit[num])-1:
+                      break
+                   else:
+                       index=index+1
+                   #print "Index=",index 
+             path_table[ptr]=path_table[ptr][:index+1]
+         
+     #if (tablensplit[num][1] not in next2):
+     if present_flag==0 and len(tablensplit[num])>2:
          next2.append(tablensplit[num][1])
+         path_table.append(tablensplit[num])    
+         temp=[]
+         temp.append(j)
+         dest_grp.append(temp)
      num=num+1
 
  # Filter 
@@ -107,46 +136,42 @@ def cost_nsplit(G,cur,tremdstlist):
          pos=y
   cmin=mincost
   best_next=next2[pos]
+  #print "Initial best_next and cmin are ",best_next," ",cmin
  else:
   cmin=99999
   best_next=0
   #*print '________________*******SINGLE PACKET NOT POSSIBLE*****_____________________'
- ''' flag=0
-
- tablensplit=[[]  for i in range(len(tremdstlist))]
- num=0
- for j in tremdstlist:
-     tablensplit[num]=nx.dijkstra_path(G,cur,tremdstlist[num])
-     num=num+1
-# print "The tablensplit is ",tablensplit
- lengthlist=[]
- max=0
- index=0
- for i in range(len(tremdstlist)):
-     lengthlist.append(len(tablensplit[i]))
-   #  print "i=",i, "tablensplit[i]= ",tablensplit[i],"length = ",len(tablensplit[i])
-     if (len(tablensplit[i])>max and len(tablensplit[i])>2):
-         max=len(tablensplit[i])
-         index=i
-         flag=1
-     if (len(tablensplit[i])==max and len(tablensplit[i])>2):
-           if (endcost(tablensplit[i],tremdstlist)<endcost(tablensplit[index],tremdstlist)): 
-             max=len(tablensplit[i])
-             index=i
-
  
- longest=tablensplit[index]
-# print "Tablensplit is ",tablensplit, "and lengthlist is ",lengthlist
-# print "Longest is ",longest
-# print "Index is ",index
- next=tablensplit[index][1]
-# print "\n Next is ",next
- wt=G.edge[cur][next]['weight']
- remcost=cost_split2(cur,next,tremdstlist)
- print "The cost to nexthop is ",wt,"and cost returned by csplit=",remcost
- cnsplit=G.edge[cur][next]['weight']+remcost '''
-
- result=[best_next,cmin]
+ t_min=99999
+ t_best_next=None
+ use_flag=0
+ 
+ if len(path_table)<=10 or len(tremdstlist)<=15 :
+ #if use_flag==0:
+   for i in range (len(path_table)-1):
+      path=nx.dijkstra_path(G,path_table[i][-1],dest_grp[i+1][-1])
+      best_target=path[1]
+      target_cost=nx.dijkstra_path(G,path[1],path_table[i][-1])+nx.dijkstra_path(G,path[1],dest_grp[i+1][-1])
+      for j in range (1,len(path)-1):
+          if path[j] not in targets:
+             cost=nx.dijkstra_path(G,path[j],path_table[i][-1])+nx.dijkstra_path(G,path[j],dest_grp[i+1][-1])
+             if cost<target_cost:
+                best_target=path[j]
+                target_cost=cost 
+      targets.append(best_target)
+   for node in targets:
+    #print "Scanning targets ...."
+    if node!=cur: 
+     cost=nx.dijkstra_path_length(G,cur,node)+cost_split(G,node,tremdstlist)
+     if cost<t_min:
+        t_min=cost
+        t_best_next=nx.dijkstra_path(G,cur,node)[1]
+   if t_min<cmin:
+    #print "t_min= ",t_min ,"and c_min=",cmin
+    use_flag=1
+    cmin=t_min
+    best_next=t_best_next
+ result=[best_next,cmin,use_flag]
  return result 
 
 
@@ -206,15 +231,19 @@ def function2(G,source,dstlist):
        break  
    if (len(table2cur)!=0 and dstflag==1):
        tremdstlist=table2temp.pop()
+       prev_node=cur
        cur=table2cur.pop()
+       if cur==prev_node:
+           #print "Looping"
+           pass
        prednext=table2nexthop.pop()
        dstflag=0
        nextchkflag=1
-   #*print "Currently at node             --->",cur
-   #*print "Now delivering to destinations--->  ",tremdstlist
+   #print "Currently at node             --->",cur
+   #print "Now delivering to destinations--->  ",tremdstlist
    for n in tremdstlist:
        if cur==n:
-          #*print"Reached destination ",cur
+          #print"Reached destination ",cur
           tremdstlist.remove(cur)    
    dstno=len(tremdstlist)
    if dstno==0:
@@ -243,30 +272,36 @@ def function2(G,source,dstlist):
        nexthop=[]
        nexthop.append(prednext)'''
    if flag1==0:                            # Condition of common next hop for all
-       #*print "The next hop is ",nexthop[0],"for all destinations"
-       #*print "Sending packet to nexthop",nexthop[0]  
+       #print "The next hop is ",nexthop[0],"for all destinations"
+       #print "Sending packet to nexthop",nexthop[0]  
       
        wt=G.edge[cur][nexthop[0]]['weight']
        H.add_edge(cur,nexthop[0],weight=wt)
-       #*print "Adding edge from ",cur, " to",nexthop[0]
+       #print "Adding edge from ",cur, " to",nexthop[0]
        totalwt=totalwt+wt
        hopcount=hopcount+1
-       #*print "Now hopcount is ==", hopcount
-
+       #print "Now hopcount is ==", hopcount
+       prev_node=cur
        cur=nexthop[0]
-      
+       if cur==prev_node:
+          #print "LOOPING"      
+          pass
    if flag1==1:
-       #*print "Splitting packet ...........?"
+       #print "Splitting packet ...........?"
        csplit=cost_split(G,cur,tremdstlist)
-       #*print "csplit cost  :  ",csplit
+       #print "csplit cost  :  ",csplit
        result= cost_nsplit(G,cur,tremdstlist)
        cnsplit=result[1]
-       #*print "cnsplit cost : ",cnsplit
-       if 0.95*cnsplit<=csplit:
+       if result[2]==1:
+         #print "Cnsplit ==",cnsplit,"and csplit=",csplit
+         #print "cnsplit cost : ",cnsplit
+         pass
+       if cnsplit<csplit:
             nt=result[0]   
             wt=G.edge[cur][nt]['weight']
             H.add_edge(cur,nt,weight=wt)
-            cur=nt 
+            prev_node=cur
+            cur=nt
             continue
          
        table2=[]
@@ -306,31 +341,31 @@ def function2(G,source,dstlist):
                   temp=tremdstlist[i]
                   table2[location].append(temp)
                  
-       #*print"Table2 is ",table2
-       #*print"nexthop2 is ",nexthop2
+       #print"Table2 is ",table2
+       #print"nexthop2 is ",nexthop2
        copytable=copy.deepcopy(table2)
        copynexthop=list(nexthop2)
    #   print "nexthop2 is",nexthop2
       
        for i in range(nexthopcnt):
-              #*print"the ",i,"th  set is ",table2[i],"and its length is ",len(table2[i])            
+              #print"the ",i,"th  set is ",table2[i],"and its length is ",len(table2[i])            
               if len(table2[i])==1:
                 
-                 #*print "One pkt copy sent to next hop ",nexthop2[i],"for the destination",table2[i][0]
-                 #*print "Current node is ",cur
+                 #print "One pkt copy sent to next hop ",nexthop2[i],"for the destination",table2[i][0]
+                 #print "Current node is ",cur
                  wt=G.edge[cur][nexthop2[i]]['weight']
                  H.add_edge(cur,nexthop2[i],weight=wt)
-                 #*print "Adding edge from ",cur," to ",nexthop2[i]
+                 #print "Adding edge from ",cur," to ",nexthop2[i]
                  unicast(G,nexthop2[i],table2[i][0])
                  totalwt=totalwt+wt
                  hopcount=hopcount+1
-                 #*print "Now hopcount is ===", hopcount
-                 #*print "Removing nexthop ",nexthop2[i],"and destination ",table2[i][0]
+                 #print "Now hopcount is ===", hopcount
+                 #print "Removing nexthop ",nexthop2[i],"and destination ",table2[i][0]
                  tremdstlist.remove(table2[i][0])
                
-                 #*print "copynexthop is ",copynexthop,"when i is=",i  
+                 #print "copynexthop is ",copynexthop,"when i is=",i  
                  copynexthop.remove(nexthop2[i])
-                 #*print "copynexthop after pop is ",copynexthop
+                 #print "copynexthop after pop is ",copynexthop
                  copytable.remove(table2[i])
                  #print "now table2 is ",table2 ,"and nexthop2 is ",nexthop2
        if len(tremdstlist)==0:
@@ -348,30 +383,31 @@ def function2(G,source,dstlist):
              nt=copynexthop[pushcount-1]
          else:
              nt=nexthop[1] 
-         #*print "copynexthop is now ",copynexthop  
+         #print "copynexthop is now ",copynexthop  
          wt=G.edge[cur][nt]['weight']
          H.add_edge(cur,nt,weight=wt)    
-         #*print "Adding edge from ",cur, "to nexthop",nt
+         #print "Adding edge from ",cur, "to nexthop",nt
          totalwt=totalwt+wt
          hopcount=hopcount+1
-         #*print "Now hopcount is ====", hopcount
+         #print "Now hopcount is ====", hopcount
+         prev_node=cur
          cur=nt
-       
+         
       
  mytotal=0
  for edge in H.edges():
     wt=H.edge[edge[0]][edge[1]]['weight']
     mytotal=mytotal+wt
- print "**************** Total cost is ",mytotal,"***************"
- print "**************** Total hop count is ",H.number_of_edges(),"***************"
+ #print "**************** Total cost is ",mytotal,"***************"
+ #print "**************** Total hop count is ",H.number_of_edges(),"***************"
  utility=float (hopcount)/G.number_of_edges() 
 
 
  percent=utility*100
- print "***************Utilisation of the network is",percent," % ***************"
+ #print "***************Utilisation of the NWRk is",percent," % ***************"
  end=time.time()
  runtime=end-start
- print 'Runtime is ',runtime
+ #print 'Runtime is ',runtime
  plt.figure(1)
  nx.draw_graphviz(G,edge_color='r')
 
@@ -397,8 +433,8 @@ def function2(G,source,dstlist):
     median_ptr=(len(costlist)+1)/2
     median=float(costlist[median_ptr])
 
- res=[totalwt,runtime,hopcount,max,avg,median]
- plt.show()
+ res=[mytotal,runtime,H.number_of_edges(),max,avg,median]
+ #plt.show()
  return (res)
 
 
@@ -426,10 +462,10 @@ if __name__ == "__main__":
  for line in f.readlines():
      dst=int(line.strip())
      dstlist.append(dst)
- source=1
+ source=dstlist[3]
  if source in dstlist:
   dstlist.remove(source)
 
  hopcount=function2(M,source,dstlist)
- #print "Hopcount = ",hopcount[2]
+ 
 
