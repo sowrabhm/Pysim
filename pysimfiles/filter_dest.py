@@ -2,17 +2,13 @@ import random
 import os
 import sys
 import networkx as nx
-
-
-
-
-G=nx.Graph()
-
-
-data = []
-dict={}
-f = open('/home/sowrabh/Desktop/jellyfish_topo.data', 'r')
-for line in f.readlines():
+import pickle
+def filter_dest(num):
+ G=nx.Graph()
+ data = []
+ dict={}
+ f = open('/home/sowrabh/Desktop/jellyfish_topo.data', 'r')
+ for line in f.readlines():
     vector = line.split()
     x1=int(vector[0])
     if len(vector)<3:
@@ -26,18 +22,25 @@ for line in f.readlines():
     dict[t]=w
 
 
-n=G.nodes()
-node_list=list(n)
-destinations=[]
-for node in node_list:
+ n=G.nodes()
+ node_list=list(n)
+ destinations=[]
+ for node in node_list:
      if len(G.neighbors(node))==1:
          destinations.append(node)
-print "Available destinations are :",len(destinations)
+ print "Available destinations are :",len(destinations)
 
-print "Destination number is ",len(destinations)-200
-r= random.sample(destinations,len(destinations)-200)
-f=open("destinations.txt",'w')
-for node in r:
+ #print "Destination number is ",len(destinations)-num
+ r= random.sample(destinations,180)
+ rpoint=random.choice([x for x in (10,120) if  x not in r])
+ pickle.dump(rpoint, open( "save.p", "wb" ) )
+ os.chdir("/home/sowrabh/Desktop/pysimfiles")
+ print "This is ",os.getcwd()
+ f=open("destinations.txt",'w')
+ for node in r:
    f.write(str(node) +"\n")
-f.close() 
+ f.close() 
+ print "Written to file and closed !!"
+if __name__ == "__main__":
 
+ filter_dest(100)

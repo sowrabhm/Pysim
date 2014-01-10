@@ -10,7 +10,8 @@ global hopcount
 totalwt=0
 hopcount=0
 
-def functiongpim(M,source,dstlist):
+
+def functiongpim(M,source,dstlist,rpoint):
  #print "Source is ",source
  #print "DStlist is ", dstlist
  global totalwt
@@ -22,7 +23,7 @@ def functiongpim(M,source,dstlist):
  hopcount=0
  H=nx.Graph()
  start=time.time()
- rpoint=110
+ #rpoint=1
  dstlistcopy=list(dstlist)
  first=dstlistcopy[len(dstlistcopy)-1]
  path=nx.dijkstra_path(G,first,rpoint)
@@ -76,10 +77,10 @@ def functiongpim(M,source,dstlist):
                                   member.append(node)
  
             
- #plt.figure(1)
- #nx.draw_graphviz(G,edge_color='r')
- #plt.figure(2)
- #nx.draw_graphviz(H,edge_color='b')
+ plt.figure(1)
+ nx.draw_graphviz(G,edge_color='r')
+ plt.figure(2)
+ nx.draw_graphviz(H,edge_color='b')
  #plt.show()
  smember=[]
  stempmember=[]
@@ -134,7 +135,49 @@ def functiongpim(M,source,dstlist):
  else:
     median_ptr=(len(costlist)+1)/2
     median=float(costlist[median_ptr])
-
+ mytotal=0
+ for edge in H.edges():
+    wt=H.edge[edge[0]][edge[1]]['weight']
+    mytotal=mytotal+wt
  res=[totalwt,runtime,hopcount,max,avg,median]
+ #print "****************GPIM Total cost is ",mytotal+nx.dijkstra_path_length(G,source,rpoint),"***************"
+ #print "****************GPIM Total hop count is ",len(H.edges())+len(nx.dijkstra_path(G,source,rpoint))-1,"***************"
+ #print"^^^^^^^^^^^^^^^^^ path is  ",nx.dijkstra_path(G,source,rpoint),"^^^^^^^^^^"
+ res=[mytotal,runtime,hopcount,max,avg,median]
  #plt.show()
  return (res)
+
+if __name__ == "__main__":
+ M=nx.Graph()
+ data = []
+ f = open('jellyfish_topo.data', 'r')
+ for line in f.readlines():
+    vector = line.split()
+    x1=int(vector[0])
+    if len(vector)<3:
+       break
+    x2=int(vector[1])
+    w=float(vector[2])
+    M.add_node(x1)
+    M.add_node(x2)
+    M.add_edge(x1,x2,weight=w)
+
+ nodes=M.nodes()
+ dstlist=[]
+ '''#r= random.sample(nodes,48)
+ for i in range(1,45):
+    dstlist.append(i)  # create destination list'''
+ 
+
+ f = open('/home/sowrabh/Desktop/pysimfiles/destinations.txt', 'r')
+ for line in f.readlines():
+     dst=int(line.strip())
+     dstlist.append(dst)
+ source=dstlist[10]
+ if source in dstlist:
+  dstlist.remove(source)
+
+
+ hopcount=functiongpim(M,source,dstlist)
+ #print "Hopcount = ",hopcount[2]
+

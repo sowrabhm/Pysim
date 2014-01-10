@@ -5,7 +5,10 @@ import function2
 import function4
 import function5
 import topo
+
+import pickle
 import random
+import sys
 import time
 import copy
 import networkx as nx
@@ -45,29 +48,50 @@ median4=[]
 median5=[]
 median6=[]
 
-subprocess.call(['./hello.sh'])
-
-for i in range(0,20):
- 
+if os.path.isfile("/home/sowrabh/Desktop/pysimfiles/result.p"):
+     os.remove("/home/sowrabh/Desktop/pysimfiles/result.p")
+for i in range(0,25):
+  os.chdir('/home/sowrabh/Desktop') 
+  subprocess.call(['./hello.sh'])
   
-  G=topo.read_topo()   # Get topology from read function
-  nodes=G.nodes()      
-  dstlist=[]
-  r= random.sample(nodes,32)
-  for i in r:
-    dstlist.append(i)  # create destination list
+  G=nx.Graph()
+  data = []
+  print "===========================  GRAPH NO :",i,"==========================="
+  f = open('jellyfish_topo.data', 'r')
+  for line in f.readlines():
+     vector = line.split()
+     x1=int(vector[0])
+     if len(vector)<3:
+        break
+     x2=int(vector[1])
+     w=float(vector[2])
+     G.add_node(x1)
+     G.add_node(x2)
+     G.add_edge(x1,x2,weight=w)
 
-  s=random.sample(nodes,1)
-  source=s[0]
-  if source in dstlist:
-    s=random.sample(nodes,1)    # select source
-  source=s[0]
+ 
+  os.chdir("/home/sowrabh/Desktop/pysimfiles")
+  os.system('python filter_dest.py')
+  time.sleep(3)
+  if not os.path.isfile("/home/sowrabh/Desktop/pysimfiles/destinations.txt"):
+     print "File not yet found !!"
+     time.sleep(5)
+  dstlist=[]
+  f = open('/home/sowrabh/Desktop/pysimfiles/destinations.txt', 'r')
+  for line in f.readlines():
+     dst=int(line.strip())
+     dstlist.append(dst)
+  source=random.choice(dstlist)
   if source in dstlist:
      dstlist.remove(source)
+
+
   dstlist2=list(dstlist)
   dstlist3=list(dstlist)
   dstlist4=list(dstlist)
   dstlist5=list(dstlist)
+
+
   res1=function1.function1(G,source,dstlist)
   cost1.append(res1[0])
   runtime1.append(res1[1])
@@ -91,8 +115,9 @@ for i in range(0,20):
   max4.append(res4[3])
   mean4.append(res4[4])
   median4.append(res4[5])
-
-  res5=function5.function5(G,source,dstlist4,5)
+  
+  rpoint = pickle.load( open( "save.p", "rb" ) )
+  res5=functiongpim.functiongpim(G,source,dstlist4,rpoint)
   cost5.append(res5[0])
   runtime5.append(res5[1])
   hop5.append(res5[2])
@@ -108,6 +133,13 @@ for i in range(0,20):
   mean6.append(res6[4])
   median6.append(res6[5])
 
+  with  open( "result.p", "wb" ) as f:
+    pickle.dump([cost1,cost2,cost4,cost5,cost6],f )
+    #pickle.dump([hop1,hop2,hop4,hop5,hop6],f )
+
+  os.remove("destinations.txt")
+  os.chdir ("/home/sowrabh/Desktop")
+  os.remove("jellyfish_topo.data")
 #for i in range(0,len(cost1)):
  #print " ",cost1[i],"|",cost2[i],"|",cost4[i],"|",cost5[i],"|",cost6[i],"|",runtime1[i],"|",runtime2[i],"|",runtime4[i],"|",runtime5[i],"|",runtime6[i]
  #print " ", hop1[i], " | ", hop2[i], " | ", hop4[i], " | ", hop5[i], " | ", hop6[i], " | "
@@ -194,10 +226,10 @@ for i in range(0,len(cost1)):
 
 
 avcost1=sumcost1/len(cost1)
-avcost2=sumcost2/len(cost1) 
-avcost4=sumcost4/len(cost1)
-avcost5=sumcost5/len(cost1)
-avcost6=sumcost6/len(cost1)
+avcost2=sumcost2/len(cost2) 
+avcost4=sumcost4/len(cost4)
+avcost5=sumcost5/len(cost5)
+avcost6=sumcost6/len(cost6)
 
 avrtime1=sumrtime1/len(runtime1)
 avrtime2=sumrtime2/len(runtime1)
@@ -269,3 +301,5 @@ print 'Average median time 5: =', avmedian5
 print 'Average median time 6: =', avmedian6
 
 
+print "sumcost2=",sumcost2
+print "cost2=",cost2
