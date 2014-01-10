@@ -1,0 +1,1472 @@
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 173
+Destination number is  73
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 167
+Destination number is  67
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 165
+Destination number is  65
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 171
+Destination number is  71
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 173
+Destination number is  73
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 168
+Destination number is  68
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+===========================  GRAPH NO : 0 ===========================
+PIM Hopcount is  136
+PIM Total cost is  4180.0
+PIM nodes = 137
+Runtime is : 2.31130599976
+===========================  GRAPH NO : 1 ===========================
+PIM Hopcount is  128
+PIM Total cost is  4244.0
+PIM nodes = 129
+Runtime is : 2.02616715431
+===========================  GRAPH NO : 2 ===========================
+PIM Hopcount is  127
+PIM Total cost is  3747.0
+PIM nodes = 128
+Runtime is : 2.10421991348
+===========================  GRAPH NO : 3 ===========================
+PIM Hopcount is  134
+PIM Total cost is  5087.0
+PIM nodes = 135
+Runtime is : 2.11458396912
+===========================  GRAPH NO : 4 ===========================
+PIM Hopcount is  124
+PIM Total cost is  3912.0
+PIM nodes = 125
+Runtime is : 2.27777481079
+===========================  GRAPH NO : 5 ===========================
+PIM Hopcount is  124
+PIM Total cost is  4353.0
+PIM nodes = 125
+Runtime is : 2.1073050499
+===========================  GRAPH NO : 6 =======================Available destinations are : 171
+Destination number is  71
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 178
+Destination number is  78
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 166
+Destination number is  66
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 166
+Destination number is  66
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 170
+Destination number is  70
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 174
+Destination number is  74
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 170
+Destination number is  70
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+====
+PIM Hopcount is  121
+PIM Total cost is  4337.0
+PIM nodes = 122
+Runtime is : 2.13999509811
+===========================  GRAPH NO : 7 ===========================
+PIM Hopcount is  125
+PIM Total cost is  4421.0
+PIM nodes = 126
+Runtime is : 2.10376405716
+===========================  GRAPH NO : 8 ===========================
+PIM Hopcount is  124
+PIM Total cost is  3748.0
+PIM nodes = 125
+Runtime is : 2.04286789894
+===========================  GRAPH NO : 9 ===========================
+PIM Hopcount is  131
+PIM Total cost is  4387.0
+PIM nodes = 132
+Runtime is : 2.12066411972
+===========================  GRAPH NO : 10 ===========================
+PIM Hopcount is  142
+PIM Total cost is  4458.0
+PIM nodes = 143
+Runtime is : 2.26406812668
+===========================  GRAPH NO : 11 ===========================
+PIM Hopcount is  136
+PIM Total cost is  4119.0
+PIM nodes = 137
+Runtime is : 1.83920478821
+===========================  GRAPH NO : 12 ===========================
+PIM Hopcount is  129
+PIM Total cost is  3906.0
+PIM nodesGNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 167
+Destination number is  67
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 172
+Destination number is  72
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 170
+Destination number is  70
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 177
+Destination number is  77
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 172
+Destination number is  72
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 168
+Destination number is  68
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+ = 130
+Runtime is : 1.97469806671
+===========================  GRAPH NO : 13 ===========================
+PIM Hopcount is  140
+PIM Total cost is  4534.0
+PIM nodes = 141
+Runtime is : 2.01405000687
+===========================  GRAPH NO : 14 ===========================
+PIM Hopcount is  127
+PIM Total cost is  4029.0
+PIM nodes = 128
+Runtime is : 2.03176093102
+===========================  GRAPH NO : 15 ===========================
+PIM Hopcount is  130
+PIM Total cost is  4054.0
+PIM nodes = 131
+Runtime is : 2.07401204109
+===========================  GRAPH NO : 16 ===========================
+PIM Hopcount is  128
+PIM Total cost is  3740.0
+PIM nodes = 129
+Runtime is : 2.20402908325
+===========================  GRAPH NO : 17 ===========================
+PIM Hopcount is  121
+PIM Total cost is  4062.0
+PIM nodes = 122
+Runtime is : 1.89386296272
+===========================  GRAPH NO : 18 ===========================
+PIM Hopcount is  121
+PIM Total cost is  3868.0
+PIM nodes = 122
+Runtime is : 2.16711997986
+========================Available destinations are : 170
+Destination number is  70
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 170
+Destination number is  70
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 171
+Destination number is  71
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 171
+Destination number is  71
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 169
+Destination number is  69
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+Available destinations are : 178
+Destination number is  78
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 169
+Destination number is  69
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+===  GRAPH NO : 19 ===========================
+PIM Hopcount is  123
+PIM Total cost is  4045.0
+PIM nodes = 124
+Runtime is : 1.94483685493
+===========================  GRAPH NO : 20 ===========================
+PIM Hopcount is  136
+PIM Total cost is  5008.0
+PIM nodes = 137
+Runtime is : 1.98740005493
+===========================  GRAPH NO : 21 ===========================
+PIM Hopcount is  126
+PIM Total cost is  3817.0
+PIM nodes = 127
+Runtime is : 1.85388898849
+===========================  GRAPH NO : 22 ===========================
+PIM Hopcount is  123
+PIM Total cost is  3486.0
+PIM nodes = 124
+Runtime is : 2.08981180191
+===========================  GRAPH NO : 23 ===========================
+PIM Hopcount is  117
+PIM Total cost is  4187.0
+PIM nodes = 118
+Runtime is : 2.00110316277
+===========================  GRAPH NO : 24 ===========================
+PIM Hopcount is  139
+PIM Total cost is  4216.0
+PIM nodes = 140
+Runtime is : 1.90810585022
+===========================  GRAPH NO : 25 ===========================
+PIM HopcounGNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+Available destinations are : 181
+Destination number is  81
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 170
+Destination number is  70
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 172
+Destination number is  72
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 173
+Destination number is  73
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 169
+Destination number is  69
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+Available destinations are : 175
+Destination number is  75
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+t is  129
+PIM Total cost is  4451.0
+PIM nodes = 130
+Runtime is : 2.07651901245
+===========================  GRAPH NO : 26 ===========================
+PIM Hopcount is  136
+PIM Total cost is  4054.0
+PIM nodes = 137
+Runtime is : 2.00693297386
+===========================  GRAPH NO : 27 ===========================
+PIM Hopcount is  131
+PIM Total cost is  4740.0
+PIM nodes = 132
+Runtime is : 1.7872440815
+===========================  GRAPH NO : 28 ===========================
+PIM Hopcount is  129
+PIM Total cost is  4086.0
+PIM nodes = 130
+Runtime is : 2.06472992897
+===========================  GRAPH NO : 29 ===========================
+PIM Hopcount is  121
+PIM Total cost is  3385.0
+PIM nodes = 122
+Runtime is : 2.17631196976
+===========================  GRAPH NO : 30 ===========================
+PIM Hopcount is  133
+PIM Total cost is  4497.0
+PIM nodes = 134
+Runtime is : 2.3114669323
+===========================  GRAPH NO : 31 ===========================
+PIM Hopcount is  129
+PIM Total cost is  4604.0
+PIM nodes = 130
+Runtime GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 173
+Destination number is  73
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 165
+Destination number is  65
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 163
+Destination number is  63
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 173
+Destination number is  73
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 174
+Destination number is  74
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 165
+Destination number is  65
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+is : 2.11791706085
+===========================  GRAPH NO : 32 ===========================
+PIM Hopcount is  130
+PIM Total cost is  4007.0
+PIM nodes = 131
+Runtime is : 2.05683302879
+===========================  GRAPH NO : 33 ===========================
+PIM Hopcount is  118
+PIM Total cost is  3979.0
+PIM nodes = 119
+Runtime is : 1.95512199402
+===========================  GRAPH NO : 34 ===========================
+PIM Hopcount is  122
+PIM Total cost is  4479.0
+PIM nodes = 123
+Runtime is : 2.12109184265
+===========================  GRAPH NO : 35 ===========================
+PIM Hopcount is  131
+PIM Total cost is  4333.0
+PIM nodes = 132
+Runtime is : 2.13016009331
+===========================  GRAPH NO : 36 ===========================
+PIM Hopcount is  118
+PIM Total cost is  3989.0
+PIM nodes = 119
+Runtime is : 2.14755797386
+===========================  GRAPH NO : 37 ===========================
+PIM Hopcount is  134
+PIM Total cost is  4544.0
+PIM nodes = 135
+Runtime is : 2.13203692436
+===========================  GRAPH NO :Available destinations are : 179
+Destination number is  79
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 167
+Destination number is  67
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 169
+Destination number is  69
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+Available destinations are : 179
+Destination number is  79
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 164
+Destination number is  64
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 175
+Destination number is  75
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 166
+Destination number is  66
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+ 38 ===========================
+PIM Hopcount is  133
+PIM Total cost is  4643.0
+PIM nodes = 134
+Runtime is : 2.15302419662
+===========================  GRAPH NO : 39 ===========================
+PIM Hopcount is  130
+PIM Total cost is  3721.0
+PIM nodes = 131
+Runtime is : 2.06070590019
+===========================  GRAPH NO : 40 ===========================
+PIM Hopcount is  132
+PIM Total cost is  4395.0
+PIM nodes = 133
+Runtime is : 2.16419887543
+===========================  GRAPH NO : 41 ===========================
+PIM Hopcount is  126
+PIM Total cost is  4591.0
+PIM nodes = 127
+Runtime is : 2.16902399063
+===========================  GRAPH NO : 42 ===========================
+PIM Hopcount is  125
+PIM Total cost is  4086.0
+PIM nodes = 126
+Runtime is : 2.1291410923
+===========================  GRAPH NO : 43 ===========================
+PIM Hopcount is  132
+PIM Total cost is  3829.0
+PIM nodes = 133
+Runtime is : 2.034678936
+===========================  GRAPH NO : 44 ===========================
+PIM Hopcount is  135
+PIM TotaGNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 167
+Destination number is  67
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 168
+Destination number is  68
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 170
+Destination number is  70
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 173
+Destination number is  73
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+GNU Octave, version 3.2.4
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+attempting to save variables to `octave-core'...
+save to `octave-core' complete
+Available destinations are : 171
+Destination number is  71
+This is  /home/sowrabh/Desktop/pysimfiles
+Written to file and closed !!
+l cost is  4755.0
+PIM nodes = 136
+Runtime is : 2.0975060463
+===========================  GRAPH NO : 45 ===========================
+PIM Hopcount is  124
+PIM Total cost is  4208.0
+PIM nodes = 125
+Runtime is : 2.16987490654
+===========================  GRAPH NO : 46 ===========================
+PIM Hopcount is  132
+PIM Total cost is  4186.0
+PIM nodes = 133
+Runtime is : 2.16513395309
+===========================  GRAPH NO : 47 ===========================
+PIM Hopcount is  125
+PIM Total cost is  4301.0
+PIM nodes = 126
+Runtime is : 2.06740784645
+===========================  GRAPH NO : 48 ===========================
+PIM Hopcount is  134
+PIM Total cost is  4162.0
+PIM nodes = 135
+Runtime is : 2.10072207451
+===========================  GRAPH NO : 49 ===========================
+PIM Hopcount is  131
+PIM Total cost is  4436.0
+PIM nodes = 132
+Runtime is : 2.21626901627
+Average cost1 : = 4643.64
+Average cost2 : = 4196.94
+Average cost4 : = 4662.96
+Average cost5 : = 4248.12
+Average cost6 : = 4208.12
+Average runtime 1 : =  1.09619399548
+Average runtime 2 : =  3.57634544373
+Average runtime 4 : =  2.31649303436
+Average runtime 5 : =  2.01705020428
+Average runtime 6 : =  2.08416422844
+Average net util 1 : =  143.26
+Average net util 2 : =  128.24
+Average net util 4 : =  143.7
+Average net util 5 : =  132.96
+Average net util 6 : =  128.64
+Average max time 1: =  240.92
+Average max time 2: =  239.8
+Average max time 4: =  240.92
+Average max time 5: =  251.32
+Average max time 6: =  236.04
+Average mean time 1: =  151.690169492
+Average mean time 2: =  153.832881356
+Average mean time 4: =  151.840677966
+Average mean time 5: =  155.901694915
+Average mean time 6: =  150.006440678
+Average median time 1: = 153.06
+Average median time 2: = 155.36
+Average median time 4: = 153.12
+Average median time 5: = 156.3
+Average median time 6: = 151.42
+sumcost2= 209847.0
+cost2= [4180.0, 4240.0, 3747.0, 5108.0, 3905.0, 4353.0, 4304.0, 4261.0, 3748.0, 4387.0, 4444.0, 4119.0, 3906.0, 4410.0, 4049.0, 4045.0, 3758.0, 4062.0, 3849.0, 4045.0, 4845.0, 3817.0, 3497.0, 4187.0, 4234.0, 4451.0, 4022.0, 4740.0, 4086.0, 3385.0, 4474.0, 4539.0, 4007.0, 3979.0, 4496.0, 4333.0, 3989.0, 4544.0, 4643.0, 3721.0, 4382.0, 4611.0, 4102.0, 3841.0, 4755.0, 4208.0, 4206.0, 4235.0, 4162.0, 4436.0]
